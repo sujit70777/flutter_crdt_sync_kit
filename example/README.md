@@ -1,17 +1,21 @@
-# flutter_sync_kit_example
+# sync_kit example
 
-Demonstrates how to use the flutter_sync_kit plugin.
+The killer demo: two independent "devices" — each with their own `InMemoryLocalStore`,
+`HlcClock` and `SyncEngine` — edit the same to-do item (LWW-Register fields), a vote
+counter (PN-Counter) and a tag set (OR-Set) at the same time.
 
-## Getting Started
+Flip a device to airplane mode with the switch, edit both devices differently, flip it
+back online, and watch the merge happen automatically — no lost writes, no manual
+conflict resolution. Expand "sync_kit inspector" on either panel to see the op log and
+live sync activity driving it.
 
-This project is a starting point for a Flutter application.
+Both devices sync through an in-memory stand-in backend (`DemoBackend`/`DemoSyncAdapter`
+in `lib/demo_backend.dart`) so the demo runs standalone with no setup. Swapping in
+`SupabaseSyncAdapter` or `RestSyncAdapter` from the `flutter_sync_kit` package is the only
+change needed to point this at a real backend.
 
-A few resources to get you started if this is your first Flutter project:
+Run it with:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+flutter run -d chrome   # or any connected device/simulator
+```

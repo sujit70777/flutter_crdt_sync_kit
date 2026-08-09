@@ -1,27 +1,23 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
+import 'package:flutter_sync_kit_example/main.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_sync_kit_example/main.dart';
-
 void main() {
-  testWidgets('Verify Platform version', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets(
+    'shows both device panels and lets Device A edit the shared todo',
+    (tester) async {
+      await tester.pumpWidget(const SyncKitDemoApp());
+      await tester.pumpAndSettle();
 
-    // Verify that platform version is retrieved.
-    expect(
-      find.byWidgetPredicate(
-        (Widget widget) =>
-            widget is Text && widget.data!.startsWith('Running on:'),
-      ),
-      findsOneWidget,
-    );
-  });
+      expect(find.text('Device A'), findsOneWidget);
+      expect(find.text('Device B'), findsOneWidget);
+      expect(find.text('Save'), findsNWidgets(2));
+
+      await tester.enterText(find.byType(TextField).first, 'Buy oat milk');
+      await tester.tap(find.text('Save').first);
+      await tester.pumpAndSettle();
+
+      expect(find.textContaining('Buy oat milk'), findsWidgets);
+    },
+  );
 }
