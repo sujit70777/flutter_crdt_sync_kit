@@ -1,4 +1,4 @@
-# sync_kit
+# flutter_crdt_sync_kit
 
 An offline-first, CRDT-based local data layer for Flutter. Write while offline, merge
 automatically and conflict-free when back online, against any backend.
