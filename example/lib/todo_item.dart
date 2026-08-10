@@ -1,4 +1,4 @@
-import 'package:flutter_sync_kit/flutter_sync_kit.dart';
+import 'package:flutter_crdt_sync_kit/flutter_crdt_sync_kit.dart';
 
 /// The record both demo "devices" edit — a plain, ordinary Dart class with
 /// no sync-specific code in it. sync_kit only needs to know how to turn it

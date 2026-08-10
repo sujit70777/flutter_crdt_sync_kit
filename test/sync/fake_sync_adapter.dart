@@ -1,4 +1,4 @@
-import 'package:flutter_sync_kit/flutter_sync_kit.dart';
+import 'package:flutter_crdt_sync_kit/flutter_crdt_sync_kit.dart';
 
 /// A fake backend shared by multiple [FakeSyncAdapter]s, simulating a
 /// server-side op log that many devices push to and pull from — enough to

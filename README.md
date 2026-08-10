@@ -83,7 +83,7 @@ implemented in this v0.1 — see [Roadmap](#roadmap).
 
 ```yaml
 dependencies:
-  flutter_sync_kit: ^0.1.0
+  flutter_crdt_sync_kit: ^0.1.0
 ```
 
 ### 1. Define a codec for your model

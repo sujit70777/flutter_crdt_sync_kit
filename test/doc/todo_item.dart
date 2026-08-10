@@ -1,4 +1,4 @@
-import 'package:flutter_sync_kit/flutter_sync_kit.dart';
+import 'package:flutter_crdt_sync_kit/flutter_crdt_sync_kit.dart';
 
 class TodoItem {
   final String title;

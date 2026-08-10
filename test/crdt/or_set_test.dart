@@ -1,7 +1,7 @@
-import 'package:flutter_sync_kit/src/crdt/hlc.dart';
-import 'package:flutter_sync_kit/src/crdt/or_set.dart';
-import 'package:flutter_sync_kit/src/op/op_kind.dart';
-import 'package:flutter_sync_kit/src/op/operation.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/hlc.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/or_set.dart';
+import 'package:flutter_crdt_sync_kit/src/op/op_kind.dart';
+import 'package:flutter_crdt_sync_kit/src/op/operation.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Operation _add(String tag, String element, String node) => Operation(

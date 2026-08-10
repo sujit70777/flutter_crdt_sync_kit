@@ -1,7 +1,7 @@
-import 'package:flutter_sync_kit/src/crdt/hlc.dart';
-import 'package:flutter_sync_kit/src/crdt/pn_counter.dart';
-import 'package:flutter_sync_kit/src/op/op_kind.dart';
-import 'package:flutter_sync_kit/src/op/operation.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/hlc.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/pn_counter.dart';
+import 'package:flutter_crdt_sync_kit/src/op/op_kind.dart';
+import 'package:flutter_crdt_sync_kit/src/op/operation.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Operation _op(String id, OpKind kind, num delta, String node) => Operation(

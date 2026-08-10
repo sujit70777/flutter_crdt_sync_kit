@@ -1,4 +1,4 @@
-name: flutter_sync_kit
+name: flutter_crdt_sync_kit
 description: >-
   An offline-first, CRDT-based local data layer for Flutter. Write while
   offline, merge automatically and conflict-free when back online, with

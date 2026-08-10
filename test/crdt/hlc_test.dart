@@ -1,4 +1,4 @@
-import 'package:flutter_sync_kit/src/crdt/hlc.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/hlc.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sync_kit/flutter_sync_kit.dart';
+import 'package:flutter_crdt_sync_kit/flutter_crdt_sync_kit.dart';
 
 import 'demo_backend.dart';
 import 'device_panel.dart';

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter_sync_kit/flutter_sync_kit.dart';
+import 'package:flutter_crdt_sync_kit/flutter_crdt_sync_kit.dart';
 
 /// A stand-in "server" for this demo: a single shared, in-memory op log
 /// that every [DemoSyncAdapter] pushes to and pulls from, so the app can
