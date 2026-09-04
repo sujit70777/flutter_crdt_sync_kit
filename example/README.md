@@ -11,7 +11,7 @@ live sync activity driving it.
 
 Both devices sync through an in-memory stand-in backend (`DemoBackend`/`DemoSyncAdapter`
 in `lib/demo_backend.dart`) so the demo runs standalone with no setup. Swapping in
-`SupabaseSyncAdapter` or `RestSyncAdapter` from the `flutter_sync_kit` package is the only
+`SupabaseSyncAdapter` or `RestSyncAdapter` from the `flutter_crdt_sync_kit` package is the only
 change needed to point this at a real backend.
 
 Run it with:

@@ -1,12 +1,12 @@
-name: flutter_sync_kit
+name: flutter_crdt_sync_kit
 description: >-
   An offline-first, CRDT-based local data layer for Flutter. Write while
   offline, merge automatically and conflict-free when back online, with
   pluggable Supabase and REST backend adapters.
 version: 1.0.0
-homepage: https://github.com/sujit70777/flutter_sync_kit
-repository: https://github.com/sujit70777/flutter_sync_kit
-issue_tracker: https://github.com/sujit70777/flutter_sync_kit/issues
+homepage: https://github.com/sujit70777/flutter_crdt_sync_kit
+repository: https://github.com/sujit70777/flutter_crdt_sync_kit
+issue_tracker: https://github.com/sujit70777/flutter_crdt_sync_kit/issues
 topics:
   - offline-first
   - crdt

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter_sync_kit/flutter_sync_kit.dart';
+import 'package:flutter_crdt_sync_kit/flutter_crdt_sync_kit.dart';
 
 /// A [ConnectivityMonitor] toggled by hand from the UI, standing in for
 /// airplane mode — this is how the demo simulates each "device" going

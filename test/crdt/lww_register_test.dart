@@ -1,9 +1,9 @@
 import 'dart:math';
 
-import 'package:flutter_sync_kit/src/crdt/hlc.dart';
-import 'package:flutter_sync_kit/src/crdt/lww_register.dart';
-import 'package:flutter_sync_kit/src/op/op_kind.dart';
-import 'package:flutter_sync_kit/src/op/operation.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/hlc.dart';
+import 'package:flutter_crdt_sync_kit/src/crdt/lww_register.dart';
+import 'package:flutter_crdt_sync_kit/src/op/op_kind.dart';
+import 'package:flutter_crdt_sync_kit/src/op/operation.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Operation _lww(String id, String value, Hlc hlc) => Operation(

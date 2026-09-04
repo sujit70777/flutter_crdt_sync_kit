@@ -1,4 +1,4 @@
-name: flutter_sync_kit_example
+name: flutter_crdt_sync_kit_example
 description: "Two offline devices editing the same record, then reconnecting and merging live."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -17,9 +17,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_sync_kit:
+  flutter_crdt_sync_kit:
     # When depending on this package from a real application you should use:
-    #   flutter_sync_kit: ^x.y.z
+    #   flutter_crdt_sync_kit: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
