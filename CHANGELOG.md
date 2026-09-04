@@ -1,6 +1,6 @@
-## 0.1.0
+## 1.0.0
 
-Initial release.
+Initial stable release.
 
 * **Op log + LWW-Register CRDT** — every write is captured as an immutable, HLC-stamped `Operation`; field-level last-write-wins merge is deterministic regardless of delivery order.
 * **G-Counter / PN-Counter** — grow-only and increment/decrement counters, idempotent under at-least-once delivery.

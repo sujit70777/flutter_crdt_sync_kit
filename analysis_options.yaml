@@ -2,3 +2,12 @@ include: package:flutter_lints/flutter.yaml
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+
+linter:
+  rules:
+    # sync_kit deliberately exposes short, stable public constructor
+    # parameter names (`store`, `clock`, `engine`, ...) while keeping the
+    # backing fields private (`_store`, `_clock`, `_engine`, ...). An
+    # initializing formal would force the parameter name to match the
+    # private field name, which would break the public API.
+    prefer_initializing_formals: false

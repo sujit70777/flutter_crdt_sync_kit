@@ -1374,7 +1374,16 @@ class $$OpsTableTableManager
                 nodeId: nodeId,
               ),
           withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .map(
+                (e) => (
+                  e.readTable<$OpsTable, OpRow>(table),
+                  BaseReferences<_$SyncKitDatabase, $OpsTable, OpRow>(
+                    db,
+                    table,
+                    e,
+                  ),
+                ),
+              )
               .toList(),
           prefetchHooksCallback: null,
         ),
@@ -1514,7 +1523,16 @@ class $$PushStatusTableTableManager
                 rowid: rowid,
               ),
           withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .map(
+                (e) => (
+                  e.readTable<$PushStatusTable, PushStatusRow>(table),
+                  BaseReferences<
+                    _$SyncKitDatabase,
+                    $PushStatusTable,
+                    PushStatusRow
+                  >(db, table, e),
+                ),
+              )
               .toList(),
           prefetchHooksCallback: null,
         ),
@@ -1659,7 +1677,16 @@ class $$CheckpointsTableTableManager
                 rowid: rowid,
               ),
           withReferenceMapper: (p0) => p0
-              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .map(
+                (e) => (
+                  e.readTable<$CheckpointsTable, CheckpointRow>(table),
+                  BaseReferences<
+                    _$SyncKitDatabase,
+                    $CheckpointsTable,
+                    CheckpointRow
+                  >(db, table, e),
+                ),
+              )
               .toList(),
           prefetchHooksCallback: null,
         ),
