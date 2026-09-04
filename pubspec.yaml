@@ -3,7 +3,7 @@ description: >-
   An offline-first, CRDT-based local data layer for Flutter. Write while
   offline, merge automatically and conflict-free when back online, with
   pluggable Supabase and REST backend adapters.
-version: 0.1.0
+version: 1.0.0
 homepage: https://github.com/sujit70777/flutter_sync_kit
 repository: https://github.com/sujit70777/flutter_sync_kit
 issue_tracker: https://github.com/sujit70777/flutter_sync_kit/issues
@@ -26,12 +26,11 @@ dependencies:
   collection: ^1.19.0
   drift: ^2.22.0
   sqlite3_flutter_libs: ^0.5.27
-  sqlite3: ^2.7.0
   path_provider: ^2.1.5
   path: ^1.9.0
   http: ^1.2.2
   supabase: ^2.6.0
-  connectivity_plus: ^6.1.0
+  connectivity_plus: ^7.0.0
   cryptography: ^2.7.0
 
 dev_dependencies:
